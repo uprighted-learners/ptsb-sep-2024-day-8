@@ -81,3 +81,28 @@ function reverseString(string) {
     return string.split("").reverse().join("");
 }
 console.log(reverseString('Javascript'))
+
+
+function countLetters(word) {
+    return word.length
+}
+console.log(countLetters("kyle should it count spaces"))
+
+function convertFtoC(f) {
+    return (f - 32) * 5 / 9
+}
+
+console.log("F to C: ", convertFtoC(85))
+
+function countDown(start) {
+    let count = start
+    const interval = setInterval(function () {
+        console.log(count)
+        count--
+        if (count < 0) {
+            console.log("BLAST OFF!")
+            clearInterval(interval)
+        }
+    }, 500)
+}
+countDown(5)
