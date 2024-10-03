@@ -94,15 +94,20 @@ function convertFtoC(f) {
 
 console.log("F to C: ", convertFtoC(85))
 
+function sayHello() {
+    console.log("Hello")
+}
+
 function countDown(start) {
     let count = start
     const interval = setInterval(function () {
+        sayHello()
         console.log(count)
         count--
         if (count < 0) {
             console.log("BLAST OFF!")
             clearInterval(interval)
         }
-    }, 500)
+    }, 1000)
 }
-countDown(5)
+countDown(500)
