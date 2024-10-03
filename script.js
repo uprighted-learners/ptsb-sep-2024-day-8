@@ -44,3 +44,40 @@ console.log(typeof parseInt(number));
 
 let price = 19.95;
 console.log("Price rounded up: ", price.toFixed(20));
+
+function calcMeal(price, tip) {
+    return (price + price * tip);
+}
+
+console.log("Meal Price= ", calcMeal(50, 0.2));
+
+function leapYear(year) {
+    if (year % 4 === 0 && year % 100 !== 0 || (year % 400 === 0)) {
+        console.log("Yes, it's a leap year")
+    } else {
+        console.log("No, it's not a leap year")
+    }
+}
+
+leapYear(2000)
+
+function isEven(number) {
+    if (number % 2 === 0) {
+        console.log(number + " is even")
+    } else {
+        console.log(number + ' is odd')
+    }
+}
+
+isEven(6542)
+
+if ("1" == 1) {
+    console.log("1 is equal to 1")
+} else {
+    console.log("1 is not equal to 1")
+}
+
+function reverseString(string) {
+    return string.split("").reverse().join("");
+}
+console.log(reverseString('Javascript'))
